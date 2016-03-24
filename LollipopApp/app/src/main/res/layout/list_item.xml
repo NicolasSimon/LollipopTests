@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:transitionName="@string/transitionImageName"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.nicolas.lollipopapp.views.MyElevatingRelativeLayout
+        android:id="@+id/mainLayout"
+        android:background="@drawable/rounded_borders_shape"
+        android:layout_gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:elevation="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="320dp"
+        android:layout_height="150dp">
+        <com.example.nicolas.lollipopapp.views.MyTwoFiveImageView
+            android:id="@+id/image"
+            android:background="@drawable/rounded_layout"
+            android:src="@drawable/img03"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:layout_width="300dp"
+            android:layout_height="120dp" />
+        <View
+            android:background="@color/transparentOverlay"
+            android:layout_centerInParent="true"
+            android:layout_width="300dp"
+            android:layout_height="120dp"/>
+        <TextView
+            android:text="Hello"
+            android:textSize="22sp"
+            android:id="@+id/text"
+            android:layout_alignBottom="@id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFFFF"
+            android:layout_height="wrap_content" />
+    </com.example.nicolas.lollipopapp.views.MyElevatingRelativeLayout>
+</RelativeLayout>

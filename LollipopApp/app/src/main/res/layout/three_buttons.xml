@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.nicolas.lollipopapp.views.MyElevatingButton
+        android:id="@+id/slower"
+        android:layout_weight="1"
+        android:text="/2"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <com.example.nicolas.lollipopapp.views.MyElevatingButton
+        android:id="@+id/regular"
+        android:layout_weight="1"
+        android:text="x1"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+    <com.example.nicolas.lollipopapp.views.MyElevatingButton
+        android:id="@+id/faster"
+        android:layout_weight="1"
+        android:text="x2"
+        android:elevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+</LinearLayout>

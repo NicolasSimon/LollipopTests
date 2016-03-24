@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/scrollView"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="#00000000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.example.nicolas.lollipopapp.views.MyTwoThreeImageView
+                android:id="@+id/image"
+                android:transitionName="@string/transitionImageName"
+                android:src="@drawable/img03"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/title"
+                android:text="@string/title"
+                android:textSize="22sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="5dp"
+                android:text="@string/content"
+                android:id="@+id/content"
+                android:textSize="19sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.example.nicolas.lollipopapp.views.MyTwoThreeRelativeLayout
+            android:visibility="invisible"
+            android:id="@+id/toRevealLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.example.nicolas.lollipopapp.views.MyTwoThreeImageView
+                android:id="@+id/imageView2"
+                android:src="@drawable/img02"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </com.example.nicolas.lollipopapp.views.MyTwoThreeRelativeLayout>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_alignBottom="@id/toRevealLayout"
+            android:src="@drawable/ic_tick"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="-28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</ScrollView>
